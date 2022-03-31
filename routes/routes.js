@@ -1,8 +1,8 @@
 import express from "express";
 import { setNews } from "../controller/news-controller.js";
-const app = express();
+const route = express.Router();
 
-app.get("/news", setNews);
-app.get("/", (req, res) => res.send("Home Page Route"));
+route.get("/news", setNews);
+route.get("/", (req, res) => res.send("Home Page Route"));
 
-export default app;
+export default route;
