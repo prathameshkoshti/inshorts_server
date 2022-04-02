@@ -5,6 +5,9 @@ import bodyParser from "body-parser";
 import Connection from "./connection/db.js";
 import DefaultData from "./default.js";
 import Route from "./routes/routes.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 
